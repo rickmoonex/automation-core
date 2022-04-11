@@ -11,6 +11,7 @@
     "@nrwl/js": "13.10.1",
     "@nrwl/linter": "13.10.1",
     "@nrwl/workspace": "13.10.1",
+    "@types/debug": "^4.1.7",
     "@types/jest": "27.0.2",
     "@types/node": "16.11.7",
     "@types/ws": "^8.5.3",
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "await-to-js": "^3.0.0",
+    "debug": "^4.3.4",
     "home-assistant-js-websocket": "^7.0.2",
     "tslib": "^2.0.0",
     "ws": "^7.5.7"
