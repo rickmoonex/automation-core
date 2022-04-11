@@ -57,20 +57,19 @@ class HomeAssistantService {
     await this._entitiesCollection.refresh();
   }
 
-  async getState(entityId: string) {
+  getState(entityId: string) {
     if (!this._connected) {
       throw new Error('not connected to hass');
     }
 
-    const entity = this._entitiesCollection.state[entityId];
-    return entity;
+    return this._entitiesCollection.state[entityId];
   }
 
   setEventCallback(eventCallback: (event: ha.HassEvent) => void) {
     this._eventCallback = eventCallback;
   }
 
-  async callService({
+  callService({
     domain,
     service,
     serviceData,
