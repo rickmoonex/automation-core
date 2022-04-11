@@ -1,0 +1,32 @@
+{
+  "root": "packages/time-service",
+  "sourceRoot": "packages/time-service/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/time-service",
+        "main": "packages/time-service/src/index.ts",
+        "tsConfig": "packages/time-service/tsconfig.lib.json",
+        "assets": ["packages/time-service/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/time-service/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/time-service"],
+      "options": {
+        "jestConfig": "packages/time-service/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
