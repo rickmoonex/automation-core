@@ -1,0 +1,32 @@
+{
+  "root": "packages/hass-connector",
+  "sourceRoot": "packages/hass-connector/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/hass-connector",
+        "main": "packages/hass-connector/src/index.ts",
+        "tsConfig": "packages/hass-connector/tsconfig.lib.json",
+        "assets": ["packages/hass-connector/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/hass-connector/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/hass-connector"],
+      "options": {
+        "jestConfig": "packages/hass-connector/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

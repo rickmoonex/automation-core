@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "hass-connector": "packages/hass-connector"
+  }
 }
