@@ -13,7 +13,7 @@
     "@nrwl/workspace": "13.10.1",
     "@types/debug": "^4.1.7",
     "@types/jest": "27.0.2",
-    "@types/node": "16.11.7",
+    "@types/node": "^16.11.26",
     "@types/ws": "^8.5.3",
     "@typescript-eslint/eslint-plugin": "~5.18.0",
     "@typescript-eslint/parser": "~5.18.0",
