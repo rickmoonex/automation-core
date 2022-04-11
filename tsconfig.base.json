@@ -17,7 +17,8 @@
     "paths": {
       "@automation-core/hass-connector": [
         "packages/hass-connector/src/index.ts"
-      ]
+      ],
+      "@automation-core/time-service": ["packages/time-service/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "hass-connector": "packages/hass-connector"
+    "hass-connector": "packages/hass-connector",
+    "time-service": "packages/time-service"
   }
 }
